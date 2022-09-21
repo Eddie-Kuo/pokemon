@@ -4,10 +4,12 @@ import { usePokemon } from '../../hooks/UsePokemon';
 import PokeCard from '../PokeCard/PokeCard';
 
 export default function Compendium() {
+  const { pokemon } = usePokemon();
+  console.log('!!!', pokemon);
   return (
     <main>
-      {usePokemon.map((poke) => {
-        <PokeCard key={poke._id}/>;
+      {pokemon.map((poke) => {
+        return <PokeCard key={poke.pokemon} {...poke}/>;
       })}
     </main>
   );
