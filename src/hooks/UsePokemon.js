@@ -18,5 +18,5 @@ export function usePokemon() {
       
     }; loadData();
   }, []);
-  return { pokemon, error };
+  return { pokemon };
 }
