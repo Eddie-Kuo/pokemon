@@ -27,7 +27,7 @@
     - this will need to be a separate API call using the fetch type function  -->
 
 <!-- ## Plan - order of operations
-1) Set up header main and footer layout - passed into App.js
+1) Set up header main and footer layout - passed into App.js (done)
 2) Load list of pokemon 
     1) Set up fetch pokemon function
     2) Import data from fetch into hook (useEffect)
