@@ -1,5 +1,6 @@
 import React from 'react';
 
+// set up select options with props
 export default function Select() {
   return (
     <div>
