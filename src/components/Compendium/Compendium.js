@@ -13,11 +13,13 @@ export default function Compendium() {
       <div className='dropdown'>
         <Select options={type} handleSelect={setSelectedType}/>
       </div>
+       
       <main>
         {pokemon.map((poke) => {
           return <PokeCard key={poke.pokemon} {...poke}/>;
         })}
       </main>
+      
     </>
   );
 }

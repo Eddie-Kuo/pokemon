@@ -4,8 +4,13 @@ main {
   height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .dropdown {
   background-color: darkcyan;
 }
+
+

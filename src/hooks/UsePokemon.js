@@ -8,13 +8,15 @@ export function usePokemon() {
   const [error, setError] = useState('');
   const [type, setType] = useState([]);
   const [selectedType, setSelectedType] = useState('all');
+  const [loading, setLoading] = useState(false);
   
   useEffect(() => {
     const loadData = async () => {
       try {
+        setLoading(true);
         const data = await fetchPokemon(selectedType);
         setPokemon(data);
-        
+        setLoading(false);
       } catch (e) {
         setError(e.message);
       }
@@ -34,5 +36,5 @@ export function usePokemon() {
     }; loadData();
   }, []);
   
-  return { pokemon, error, type, setSelectedType, selectedType };
+  return { pokemon, error, type, setSelectedType, selectedType, loading };
 }
