@@ -7,19 +7,21 @@ export function usePokemon() {
   const [pokemon, setPokemon] = useState([]);
   const [error, setError] = useState('');
   const [type, setType] = useState([]);
-  const [selectedType, setSelectedType] = useState('bug');
+  const [selectedType, setSelectedType] = useState('all');
   
   useEffect(() => {
     const loadData = async () => {
       try {
         const data = await fetchPokemon(selectedType);
         setPokemon(data);
+        
       } catch (e) {
         setError(e.message);
       }
       
     }; loadData();
   }, [selectedType]);
+  
 
   useEffect(() => {
     const loadData = async () => {
@@ -30,6 +32,7 @@ export function usePokemon() {
         setError(e.message);
       }
     }; loadData();
-  });
-  return { pokemon, error, type, setSelectedType };
+  }, []);
+  
+  return { pokemon, error, type, setSelectedType, selectedType };
 }
