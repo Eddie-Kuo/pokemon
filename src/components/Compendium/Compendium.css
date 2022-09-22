@@ -1,6 +1,11 @@
 main {
+  padding: 2vh;
   background-color: darkcyan;
   height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dropdown {
+  background-color: darkcyan;
 }

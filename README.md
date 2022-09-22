@@ -28,13 +28,8 @@
 
 <!-- ## Plan - order of operations
 1) Set up header main and footer layout - passed into App.js (done)
-<<<<<<< HEAD
 2) Load list of pokemon 
     1) Set up fetch pokemon function (done)
-=======
-2) Load list of pokemon (done)
-    1) Set up fetch pokemon function
->>>>>>> 62b1c684fd5d26439294c6a865461e8e2ec67d53
     2) Import data from fetch into hook (useEffect)
     3) Pass the hook into compendium that will map and render the html elements
     4) Pass the compendium into main to display
