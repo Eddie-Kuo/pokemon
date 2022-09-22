@@ -6,7 +6,7 @@ import Select from '../controls/Select';
 
 export default function Compendium() {
   const { pokemon, type, setSelectedType } = usePokemon();
-  // console.log(selectedType);
+  console.log(pokemon);
 
   return (
     <>

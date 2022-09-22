@@ -4,5 +4,11 @@ header {
   align-items: center;
   background-color: aquamarine;
   height: 5vh;
+  font-family: 'Bungee Spice', cursive;
+  font-size: 30px;
+  text-shadow: 2px 3px 3px #CE5937;
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
   
 }
