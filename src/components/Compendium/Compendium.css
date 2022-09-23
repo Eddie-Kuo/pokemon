@@ -14,7 +14,7 @@ main {
   padding: 2vh;
   background-color: rgb(10, 80, 80);
   background-image: url('../../../public/pink-clouds.webp');
-  height: 100vh;
+  height: 95vh;
   display: grid;
   grid-template-rows: 1fr 8fr;
   overflow: scroll;
@@ -26,16 +26,16 @@ main {
   object-fit: cover;
 }
 
-.dropdown {
+.controls {
   height: 5vh;
   font-size: 20px;
   font-family: 'Share Tech Mono', monospace;
-  
+  display: flex;
+  justify-content: center;
+  gap: 4vh;
   word-spacing: 4px;
   color: black;
   padding-top: 10px;
-  
-
   
 }
 
@@ -49,6 +49,21 @@ main {
   overflow-y: hidden;
   overflow-x: hidden;
   margin-top: 2vh;
+}
+
+button {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+select {
+  background-color: black;
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+
 }
 
 

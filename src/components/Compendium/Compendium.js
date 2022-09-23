@@ -2,18 +2,22 @@ import React from 'react';
 import './Compendium.css';
 import { usePokemon } from '../../hooks/UsePokemon';
 import PokeCard from '../PokeCard/PokeCard';
-import Select from '../controls/Select';
+import Search from '../controls/Search';
+import SelectEl from '../controls/Select';
 
 export default function Compendium() {
-  const { pokemon, type, setSelectedType } = usePokemon();
+  const { pokemon, type, setSelectedType, searched, setSearched } = usePokemon();
+ 
+
   
 
   return (
       
        
     <main>
-      <div className='dropdown'>
-        <Select options={type} handleSelect={setSelectedType}/>
+      <div className='controls'>
+        <Search obj={pokemon} handleSearch={setSearched} searched={searched} />
+        <SelectEl options={type} handleSelect={setSelectedType}/>
       </div>
       <div className='cards'>
         {pokemon.map((poke) => {
