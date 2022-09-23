@@ -1,0 +1,53 @@
+img {
+  height: 9vh;
+  box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
+  background-color: rgb(101, 177, 177);
+  padding: 4px;
+  border: 2px solid aquamarine;
+  border-radius: 6px;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+h3 {
+  font-size: 20px;;
+  font-family: 'Bungee Spice', cursive;
+  text-shadow: 1px 2px 2px #CE5937;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  color: black;
+  font-weight: bold;
+}
+
+.pokecard img:hover {
+  transition: all .3s ease-in-out;
+  transform: rotate(3deg);
+  cursor: pointer;
+  scale: 1.1;
+  background-color: rgb(193, 231, 231);
+  border: 2px solid orangered;
+  box-shadow: 6px 5px 14px 0px rgba(255,255,255,0.53);
+-webkit-box-shadow: 6px 5px 14px 0px rgba(255,255,255,0.53);
+-moz-box-shadow: 6px 5px 14px 0px rgba(255,255,255,0.53);
+
+  
+  
+}
+
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+

@@ -1,6 +1,69 @@
-main {
-  background-color: darkcyan;
+/* main {
+  padding: 2vh;
+  background-color: rgb(10, 80, 80);
   height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 2vh;
+} */
+
+main {
+  padding: 2vh;
+  background-color: rgb(10, 80, 80);
+  background-image: url('../../../public/pink-clouds.webp');
+  height: 95vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 4vh;
+  background-position: center;
+  background-size: 100% 100%;
+  object-fit: cover;
 }
+
+.controls {
+  height: 5vh;
+  font-size: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  justify-content: center;
+  gap: 4vh;
+  word-spacing: 4px;
+  color: black;
+  padding-top: 10px;
+  
+}
+
+.cards {
+  padding: 2vh;
+  
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-top: 2vh;
+}
+
+button {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+select {
+  background-color: black;
+  color: white;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+
+}
+
+
