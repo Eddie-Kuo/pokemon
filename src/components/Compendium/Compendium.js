@@ -6,20 +6,23 @@ import Select from '../controls/Select';
 
 export default function Compendium() {
   const { pokemon, type, setSelectedType } = usePokemon();
-  console.log(pokemon);
+  
 
   return (
-    <>
+      
+       
+    <main>
       <div className='dropdown'>
         <Select options={type} handleSelect={setSelectedType}/>
       </div>
-       
-      <main>
+      <div className='cards'>
         {pokemon.map((poke) => {
           return <PokeCard key={poke.pokemon} {...poke}/>;
         })}
-      </main>
+      </div>
       
-    </>
+    </main>
+    
+    
   );
 }
