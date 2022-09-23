@@ -6,10 +6,8 @@ import Search from '../controls/Search';
 import SelectEl from '../controls/Select';
 
 export default function Compendium() {
-  const { pokemon, type, setSelectedType, searched, setSearched } = usePokemon();
- 
 
-  
+  const { pokemon, type, setSelectedType, searched, setSearched } = usePokemon();
 
   return (
       
